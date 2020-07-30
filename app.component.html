@@ -1,0 +1,13 @@
+<div class="container">
+ <h1> oneway data binding to display an animal image based on  animal name selected from the dropdown</h1>
+<div class="form-group">
+<select (change)="selectChangeHandler($event)">
+                <option value="dog">dog</option>
+                <option value="lion">lion</option>
+                <option value="dianosar">dianosar</option>  
+                <option value="fox">fox</option>       
+            </select>
+  </div>
+<img [src]="selectedAnimal"/>
+
+</div>
